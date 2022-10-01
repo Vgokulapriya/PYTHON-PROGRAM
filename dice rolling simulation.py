@@ -2,15 +2,15 @@
 
 import random
 
+
 def roll_dice():
-  
-  dice_drawing = {
+
+    dice_drawing = {
         1: (
             " _____ ",
             "|  1  |",
             "|  o  |",
             "|_____|",
-             
         ),
         2: (
             " _____",
@@ -47,19 +47,19 @@ def roll_dice():
             "|o    o |",
             "|_______|",
         ),
+    }
 
-  }
+    roll = input("roll the dice ? (YES/ NO):")
 
-  roll = input("roll the dice ? (YES/ NO):")
+    while roll.lower() == "YES".lower():
+        dice1 = random.randint(1, 6)
+        dice2 = random.randint(1, 6)
 
-  while roll.lower() =="YES".lower():
-        dice1 = random.randint(1,6)
-        dice2 = random.randint(1,6)
-
-        print("dice rolled: {} and {}".format(dice1,dice2))
+        print("dice rolled: {} and {}".format(dice1, dice2))
         print("\n".join(dice_drawing[dice1]))
         print("\n".join(dice_drawing[dice2]))
 
         roll = input("roll again ? (YES/NO): ")
-  
+
+
 roll_dice()

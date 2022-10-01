@@ -14,6 +14,5 @@ if total <= 50:
 elif total <= 100:
     shipping_cost += 15
 else:
-    shipping_cost += 5 
-print(f"shipping cost:{shipping_cost}")          
- 
+    shipping_cost += 5
+print(f"shipping cost:{shipping_cost}")

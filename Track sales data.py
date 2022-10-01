@@ -4,10 +4,10 @@
 
 stock = int(input())
 product_sold = int(input())
-target = int(input()) 
+target = int(input())
 
 target_hit = product_sold == target
-print( "hit product sale target:" )
+print("hit product sale target:")
 print(target_hit)
 
 current_stock = stock - product_sold
